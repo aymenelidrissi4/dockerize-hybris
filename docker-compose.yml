@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  hybris_container:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    ports:
+      - "9001:9001"
+      - "9002:9002"
+      - "8000:8000"
+    volumes:
+      - ./project:/project
