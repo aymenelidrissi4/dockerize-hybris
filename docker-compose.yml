@@ -3,7 +3,7 @@ version: '3'
 services:
   hybris_image_builder:
     build:
-      context: ./path/to/dockerfile/directory
+      context: ./docker
       dockerfile: Dockerfile
     image: hybris:1905
 
